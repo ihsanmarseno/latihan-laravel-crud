@@ -60,7 +60,7 @@ class mahasiswaController extends Controller
         ], [
             'nim.required'=> 'NIM Wajib diisi',
             'nim.numeric'=> 'NIM Wajib dalam angka',
-            'nim.unique'=> 'NIM sudah ada di dalam databse',
+            'nim.unique'=> 'NIM sudah ada di dalam database',
             'nama.required'=> 'Nama Wajib diisi',
             'jurusan.required'=> 'Jurusan Wajib diisi',
         ]);
