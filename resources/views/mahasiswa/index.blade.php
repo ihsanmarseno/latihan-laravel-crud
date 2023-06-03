@@ -9,7 +9,7 @@
             <form class="d-flex" action="{{ url ('mahasiswa')}}" method="get">
                 <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
                 <button class="btn btn-secondary" type="submit">
-                    <i class="fas fa-search"></i> </button>
+                    <i class="fas fa-search"></i></button>
             </form>
         </div>
         
@@ -38,12 +38,12 @@
                     <td>{{ $item->nama}}</td>
                     <td>{{ $item->jurusan}}</td>
                     <td>
-                        <a href='{{ url('mahasiswa/' .$item->nim. '/edit') }}' class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+                        <a href='{{ url('mahasiswa/' .$item->nim. '/edit') }}' class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                         <form onsubmit="return confirm ('Yakin akan menghapus data?')" class="d-inline" action="{{ url('mahasiswa/' .$item->nim) }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button type="submit" name="submit" class="btn btn-danger btn-sm">
-                                <i class="fa-solid fa-trash-can"></i> Delete</button>
+                                <i class="fa-solid fa-trash-can"></i> Hapus</button>
                         </form>
                     </td>
                 </tr>

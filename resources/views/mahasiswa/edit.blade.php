@@ -28,7 +28,7 @@
         </div>
         <div class="mb-3 row">
             <label for="jurusan" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10"><button type="submit" class="btn btn-primary" name="submit"><i class="fa-solid fa-floppy-disk"></i> Simpan</button></div>
+            <div class="col-sm-10"><button type="submit" class="btn btn-warning" name="submit"><i class="fa-solid fa-file-pen"></i> Perbarui</button></div>
         </div>
       </form>
     </div>

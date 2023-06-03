@@ -18,14 +18,14 @@ class mahasiswaController extends Controller
     public function index(Request $request)
     {
         $katakunci = $request->katakunci;
-        $jumlahbaris = 4;
+        $jumlahbaris = 8;
         if (strlen($katakunci)) {
             $data = mahasiswa::where('nim', 'like', "%$katakunci%")
                 ->orWhere('nama', 'like', "%$katakunci%")
                 ->orWhere('jurusan', 'like', "%$katakunci%")
                 ->paginate($jumlahbaris);
         } else {
-            $data = mahasiswa::orderBy('nim', 'desc')->paginate($jumlahbaris);
+            $data = mahasiswa::orderBy('nim', 'asc')->paginate($jumlahbaris);
         }
 
         return view('mahasiswa.index')->with('data', $data);
